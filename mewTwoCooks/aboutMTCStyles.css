@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.back-button-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-button {
+    font-size: 1em;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+}
+
+.image-container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+.about-image,
+.hover-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hover-image {
+    opacity: 0;
+}
+
+.image-container:hover .about-image {
+    opacity: 0;
+}
+
+.image-container:hover .hover-image {
+    opacity: 1;
+}
+
+.text-container {
+    width: 50%;
+    text-align: left;
+    max-width: 350px;
+}
+
+.text-container h1,
+.text-container h2 {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.text-container h2 {
+    color: #7A5E9A;
+}
+
+.text-container p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 1.5em;
+}
